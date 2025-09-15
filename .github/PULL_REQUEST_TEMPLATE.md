@@ -1,3 +1,5 @@
+Please check the type of change your PR introduces.
+
 Bugfix [ ]
 Documentation [ ]
 New Feature [ ]
