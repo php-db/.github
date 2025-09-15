@@ -1,0 +1,38 @@
+name: Pull Request
+description: Standard Pull Request Template
+title: "[PR]: "
+labels: ["status: needs review"]
+body:
+  - type: dropdown
+    id: changetype
+    attributes:
+      label: Change Type
+      description: What type of change does this PR introduce?
+      options:
+        - Bugfix
+        - Documentation
+        - New Feature
+        - RFC
+        - QA
+        - Other
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: bcbreak
+    attributes:
+      label: Backwards Compatibility Break
+      description: Does this PR introduce a backwards compatibility break?
+      options:
+        - No
+        - Yes
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the changes made in this PR.
+    validations:
+      required: true
