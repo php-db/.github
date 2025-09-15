@@ -64,6 +64,9 @@
 - name: "status: needs information",
   color: "fef2c0",
   description: ""
+- name: "status: needs review",
+  color: "215cea",
+  description: "Needs Review"
 - name: "type: rfc",
   color: "d4c5f9",
   description: "RFC"
