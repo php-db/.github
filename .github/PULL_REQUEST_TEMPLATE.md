@@ -36,7 +36,23 @@ contribution/patch. You can do this by providing either the --signoff or -s flag
 | QA            | yes/no
 | House Keeping | yes/no
 
-### Description
+## Types of changes
+<!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
+- [ ] Documentation improvement
+- [ ] Bugfix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] RFC (Request for Comments, a discussion topic)
+- [ ] QA improvement (unit/integration tests, CS fixes, etc.) that does not change code behavior
+
+## Checklist:
+<!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
+<!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
+- [ ] An issue has been created for this pull request.
+- [ ] I have added tests for my changes.
+- [ ] All new and existing tests passed.
+- [ ] Documentation has been updated accordingly.
+- [ ] This pull request targets the correct branch.
 
 <!--
 
@@ -72,3 +88,16 @@ Why is this changed needed?:
   - What types of refactoring are you doing?
   - TARGET THE NEXT MINOR BRANCH OR THE NEXT MAJOR IF BC WILL BE BROKEN
 -->
+## Description
+<!--- Describe your changes in detail -->
+
+## Motivation and Context
+<!--- Why is this change required? What problem does it solve? -->
+<!--- If it fixes an open issue, please link to the issue here. -->
+
+## How has this been tested?
+<!--- Please describe in detail how you tested your changes. -->
+<!--- Include details of your testing environment, tests ran to see how -->
+<!--- your change affects other areas of the code, etc. -->
+
+## Screenshots (if appropriate):
