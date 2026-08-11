@@ -25,18 +25,7 @@ You MUST provide a signoff in your commits for us to accept your
 contribution/patch. You can do this by providing either the --signoff or -s flag when using
 "git commit".
 -->
-
-|    Q          |   A
-|-------------- | ------
-| Documentation | yes/no
-| Bugfix        | yes/no
-| BC Break      | yes/no
-| New Feature   | yes/no
-| RFC           | yes/no
-| QA            | yes/no
-| House Keeping | yes/no
-
-## Types of changes
+# Types of changes
 <!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
 - [ ] Documentation improvement
 - [ ] Bugfix (non-breaking change which fixes an issue)
