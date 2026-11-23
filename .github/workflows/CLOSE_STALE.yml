@@ -1,16 +1,25 @@
 name: Close inactive issues
+
 on:
   schedule:
     - cron: "30 1 * * *"
 
+# Deny everything by default; the single job grants what it needs.
+permissions: {}
+
+concurrency:
+  group: close-inactive-issues
+  cancel-in-progress: false
+
 jobs:
   close-issues:
+    name: Close inactive issues
     runs-on: ubuntu-latest
     permissions:
-      issues: write
-      pull-requests: write
+      issues: write # mark issues stale, then close them
     steps:
-      - uses: actions/stale@v9
+      - name: Close stale issues
+        uses: actions/stale@5bef64f19d7facfb25b37b414482c7164d639639 # v9
         with:
           days-before-issue-stale: 30
           days-before-issue-close: 14
